@@ -1,0 +1,36 @@
+{
+    "name": "@issue/service",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "clean": "rm -rf dist",
+        "build": "pnpm clean && vite build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "exports": {
+        ".": {
+            "import": {
+                "development": "./src",
+                "default": "./dist/service.mjs"
+            },
+            "require": {
+                "development": "./src",
+                "default": "./dist/service.js"
+            }
+        }
+    },
+    "typesVersions": {
+        "*": {
+            "*": [
+                "./src/*"
+            ]
+        }
+    },
+    "dependencies": {
+        "vue": "^3.2.45",
+        "@issue/utils": "workspace:*"
+    }
+}

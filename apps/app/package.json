@@ -1,0 +1,16 @@
+{
+    "name": "app",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "release": "vue-tsc && vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "vue": "^3.2.45",
+        "@issue/utils": "workspace:*",
+        "@issue/service": "workspace:*"
+    }
+}
