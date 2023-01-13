@@ -29,7 +29,17 @@
             ]
         }
     },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://npm.com",
+        "exports": {
+            ".": {
+                "import": "./dist/utils.mjs",
+                "require": "./dist/utils.js"
+            }
+        }
+    },
     "dependencies": {
-        "vue": "^3.2.45"
+        "vue": "^2.7.14"
     }
 }

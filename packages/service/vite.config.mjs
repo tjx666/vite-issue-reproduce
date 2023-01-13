@@ -3,7 +3,8 @@ import path from 'node:path';
 import { promisify } from 'node:util';
 
 import rollupPluginNodeResolve from '@rollup/plugin-node-resolve';
-import vitePluginVue from '@vitejs/plugin-vue';
+import vitePluginVue2 from '@vitejs/plugin-vue2';
+import vitePluginVue2Jsx from '@vitejs/plugin-vue2-jsx';
 import _glob from 'glob';
 import { mergeConfig, defineConfig } from 'vite';
 import vitePluginCssInjectedByJs from 'vite-plugin-css-injected-by-js';
@@ -31,7 +32,8 @@ function getCommonPlugins() {
         rollupPluginNodeResolve({
             extensions: ['.js', '.ts', '.mjs', '.tsx', '.json', '.vue'],
         }),
-        vitePluginVue(),
+        vitePluginVue2(),
+        vitePluginVue2Jsx(),
         vitePluginVueTypeImports(),
         vitePluginCssInjectedByJs(),
     ];

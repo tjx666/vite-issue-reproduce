@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { ButtonProps } from './types';
+import type { ButtonProps } from '../Button/types';
 
 defineProps<ButtonProps>();
 </script>
