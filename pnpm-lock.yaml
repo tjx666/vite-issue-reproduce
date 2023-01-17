@@ -34,23 +34,14 @@ importers:
 
   apps/app:
     specifiers:
-      '@issue/service': workspace:*
-      '@issue/utils': workspace:*
+      '@scripts/tsconfig': workspace:*
       vue: ^2.7.14
     dependencies:
-      '@issue/service': link:../../packages/service
-      '@issue/utils': link:../../packages/utils
       vue: 2.7.14
+    devDependencies:
+      '@scripts/tsconfig': link:../../scripts/tsconfig
 
-  packages/service:
-    specifiers:
-      '@issue/utils': workspace:*
-      vue: ^2.7.14
-    dependencies:
-      '@issue/utils': link:../utils
-      vue: 2.7.14
-
-  packages/utils:
+  scripts/tsconfig:
     specifiers:
       vue: ^2.7.14
     dependencies:

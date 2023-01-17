@@ -1,9 +1,8 @@
-<script setup lang="ts">
-import { Box } from '@issue/service';
+<script lang="ts" setup>
+let a = 1;
+a = null;
 </script>
 
-<template>
-    <Box size="small"></Box>
-</template>
+<template></template>
 
 <style scoped></style>

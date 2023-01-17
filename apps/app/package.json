@@ -9,8 +9,9 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "vue": "^2.7.14",
-        "@issue/utils": "workspace:*",
-        "@issue/service": "workspace:*"
+        "vue": "^2.7.14"
+    },
+    "devDependencies": {
+        "@scripts/tsconfig": "workspace:*"
     }
 }

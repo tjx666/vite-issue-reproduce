@@ -1,8 +1,10 @@
 {
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Base",
     "compilerOptions": {
         "target": "esnext",
         "module": "esnext",
-        "lib": ["DOM", "ESNext"],
+        "lib": ["DOM", "ESNext", "DOM.Iterable"],
         "composite": false,
         "declaration": false,
         "esModuleInterop": true,
@@ -24,14 +26,9 @@
         "noImplicitAny": false,
         "noImplicitThis": true,
         "experimentalDecorators": true,
-        "outDir": "./out",
-        "baseUrl": ".",
-        "paths": {
-            "react": ["./empty.d.ts"]
-        }
+        "outDir": "./out"
     },
     "vueCompilerOptions": {
         "target": 2.7
-    },
-    "include": ["src/**/*.js", "src/**/*.ts", "src/**/*.vue", "*.d.ts"]
+    }
 }

@@ -1,0 +1,11 @@
+{
+    "name": "@scripts/tsconfig",
+    "version": "0.0.0",
+    "private": true,
+    "files": [
+        "base.json"
+    ],
+    "dependencies": {
+        "vue": "^2.7.14"
+    }
+}
